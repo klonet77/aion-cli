@@ -25,4 +25,6 @@ func init() {
 	rootCmd.AddCommand(logoutCmd)
 	rootCmd.AddCommand(logoutAllCmd)
 	rootCmd.AddCommand(whoamiCmd)
+	rootCmd.AddCommand(pingCmd)
+	rootCmd.AddCommand(metricsCmd)
 }

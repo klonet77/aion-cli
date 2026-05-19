@@ -85,8 +85,8 @@ func StartPKCEFlow(keycloakURL, realm, clientID string, openBrowser func(string)
 	if err := openBrowser(authURL); err != nil {
 		fmt.Printf("⚠️  Impossibile aprire il browser automaticamente.\n")
 	}
-	fmt.Printf("DEBUG redirect_uri: %s\n", redirectURI)
-	fmt.Printf("DEBUG authURL: %s\n", authURL)
+	// fmt.Printf("DEBUG redirect_uri: %s\n", redirectURI)
+	// fmt.Printf("DEBUG authURL: %s\n", authURL)
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Minute)
 	defer cancel()
 
