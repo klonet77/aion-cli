@@ -28,7 +28,7 @@ func runPing(cmd *cobra.Command, args []string) error {
 		return err
 	}
 
-	url := ctx.Server + "/apiv1/healthz"
+	url := ctx.Server + "/apiv1/monitor/healthz"
 	fmt.Printf("🔗 %s\n", url)
 
 	start := time.Now()

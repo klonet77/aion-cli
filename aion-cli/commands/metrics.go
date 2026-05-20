@@ -34,7 +34,7 @@ func runMetrics(cmd *cobra.Command, args []string) error {
 		return err
 	}
 
-	req, err := http.NewRequest("GET", baseURL+"/apiv1/metrics", nil)
+	req, err := http.NewRequest("GET", baseURL+"/apiv1/monitor/metrics", nil)
 	if err != nil {
 		return err
 	}

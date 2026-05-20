@@ -23,6 +23,8 @@ go build -o aion ./cmd/aion/
   --client-id aion-cli \
   --server https://api.datainf.cloud
 
+
+
 # Mostra utente corrente
 ./aion whoami
 
